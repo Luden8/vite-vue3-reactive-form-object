@@ -3,18 +3,19 @@
     <h5>Current props inside the component:</h5>
     Props object is not reactive:
     <br />
-    {{ props }}
+    <pre>{{ props }}</pre>
     <br />
     but its properties are:
     <br />
-    {{ props.modelValue }}
+    <pre>{{ props.modelValue }}</pre>
     <br />
     <br />
     <h5>This is current form state, it is reactive because of toRefs</h5>
-    {{ values }}
+    <pre>{{ values }}</pre>
     <input type="text" v-model="value" />
     <input type="text" v-model="testPropValue" />
-    Value: {{ value }}
+    Value: 
+    <pre>{{ value }}</pre>
     <button @click="saveModelValue">Update value</button>
   </div>
 </template>
